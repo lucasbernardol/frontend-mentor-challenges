@@ -1,0 +1,52 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --qr-code-padding: 2.2rem;
+  --qr-component-width: 35rem;
+
+  font-size: 62.5%;
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 60px) {
+  :root {
+    font-size: 55%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+
+  border: none;
+  outline: none;
+
+  font-size: 1.5rem; /** 15px */
+}
+
+body {
+  background-color: var(--color-light-gray);
+}
+
+a {
+  text-decoration: underline;
+}
+
+img {
+  user-select: none;
+  object-fit: cover;
+
+  width: 100%;
+  min-height: 100%;
+}
