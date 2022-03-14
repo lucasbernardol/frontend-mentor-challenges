@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/lucasbernardol/frontend-mentor-challenges.git",
   "author": "lucasbernardol <jose.lukass03@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@lucasbernardolira/custom-commitlint-config": "^0.0.2"
+  }
 }
