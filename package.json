@@ -1,0 +1,8 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lucasbernardol/frontend-mentor-challenges.git",
+  "author": "lucasbernardol <jose.lukass03@gmail.com>",
+  "license": "MIT"
+}
