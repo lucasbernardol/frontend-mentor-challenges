@@ -21,11 +21,12 @@
   flex: 0;
 
   max-width: var(--qr-component-width);
-  margin: 1.2rem 1rem;
   padding: var(--qr-code-padding);
 
+  margin: 1.2rem 1rem;
+
   background-color: var(--color-white);
-  border-radius: 1rem;
+  border-radius: var(--base-border-radius);
 
   box-shadow: 4px 4px 15px -10px rgba(0, 0, 0, 0.5);
 }
@@ -34,8 +35,8 @@
   width: 100%;
   height: auto;
 
-  border-radius: 1rem;
   overflow: hidden;
+  border-radius: var(--base-border-radius);
 }
 
 .qr_component_details {
@@ -64,13 +65,13 @@
   text-align: center;
 }
 
-.attribution {
+.created_by_section {
   font-size: 11px;
   text-align: center;
 
   margin-bottom: 2rem;
 }
 
-.attribution a {
+.created_by_section a {
   color: hsl(228, 45%, 44%);
 }
