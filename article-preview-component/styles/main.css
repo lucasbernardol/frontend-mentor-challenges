@@ -132,11 +132,11 @@
   transition: transform 0.4s, background 0.4s;
 }
 
-.share_article_button:active {
+.tooltip_button:active {
   background-color: var(--grayish-blue);
 }
 
-.share_article_button:hover {
+.tooltip_button:hover {
   transform: scale(1.2);
 }
 
@@ -193,7 +193,7 @@
   transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.tooltip_button_back:hover {
+.tooltip_button_close:hover {
   transform: scale(1.1);
 }
 
