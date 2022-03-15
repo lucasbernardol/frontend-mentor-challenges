@@ -1,0 +1,9 @@
+@keyframes tooltip_show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
