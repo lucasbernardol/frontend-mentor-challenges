@@ -28,7 +28,7 @@
   background-color: var(--color-white);
   border-radius: var(--base-border-radius);
 
-  box-shadow: 4px 4px 15px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px -10px rgba(0, 0, 0, 0.2);
 }
 
 .qr_component_image {
@@ -43,7 +43,7 @@
   width: 100%;
 
   padding: 0.8rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 }
 
 .qr_component_details h2 {
@@ -59,19 +59,27 @@
 }
 
 .qr_component_details p {
+  max-width: 90%;
+  margin: 0 auto;
+
   font-size: 1.5rem;
 
   color: var(--color-grayish-blue);
   text-align: center;
 }
 
-.created_by_section {
-  font-size: 11px;
+.credits_section {
+  font-size: 1.2rem;
   text-align: center;
 
   margin-bottom: 2rem;
+  transition: opacity 0.4s ease-in;
 }
 
-.created_by_section a {
+.credits_section a {
   color: hsl(228, 45%, 44%);
+}
+
+.credits_section a:hover {
+  opacity: 0.6;
 }
