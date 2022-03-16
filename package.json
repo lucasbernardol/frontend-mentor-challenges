@@ -6,7 +6,8 @@
   "author": "lucasbernardol <jose.lukass03@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "husky:init": "husky install"
+    "husky:init": "husky install",
+    "sass:faq-accordion": "sass -s compressed -w --no-source-map faq-accordion-card/styles/sass/index.scss faq-accordion-card/styles/css/bundle.css"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
