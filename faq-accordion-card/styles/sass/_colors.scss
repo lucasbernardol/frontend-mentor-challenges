@@ -1,0 +1,30 @@
+:root {
+  --color-very-dark-blue: hsl(238, 29%, 16%);
+  --color-soft-red: hsl(14, 88%, 65%);
+
+  --color-soft-violet-gradient: hsl(273, 75%, 66%);
+  --color-soft-blue-gradient: hsl(240, 73%, 65%);
+
+  --color-text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --color-text-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --color-divider-light-grayish-blue: hsl(240, 5%, 91%);
+
+  --color-white: #ffffff;
+
+  --background-image-desktop: url('../../public/images/bg-pattern-desktop.svg');
+
+  font-size: 62.5%; /** 10px */
+}
+
+@media (max-width: 980px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 58%;
+  }
+}

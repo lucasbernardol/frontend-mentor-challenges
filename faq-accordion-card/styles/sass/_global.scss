@@ -1,0 +1,42 @@
+@import './colors';
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.4rem;
+
+  border: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+
+  display: block;
+}
+
+body {
+  background: linear-gradient(
+    360deg,
+    var(--color-soft-blue-gradient),
+    var(--color-soft-violet-gradient)
+  );
+}
+
+i.expand_more,
+i.expand_less {
+  color: var(--color-soft-red);
+}
