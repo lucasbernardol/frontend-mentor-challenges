@@ -1,0 +1,69 @@
+:root {
+  --color-dark-blue-background: hsl(233, 47%, 7%);
+  --color-blue-card-background: hsl(244, 38%, 16%);
+  --color-soft-violet: hsl(277, 64%, 61%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-slightly-headings-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+  font-size: 62.5%;
+}
+
+*::selection {
+  background-color: rgba(180, 180, 255, 0.4);
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 55%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1.6rem; /** CSS Unit: 16px | 1.6 * 10 = 16 */
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+body {
+  background-color: var(--color-dark-blue-background);
+}
+
+ul {
+  list-style: none;
+}
