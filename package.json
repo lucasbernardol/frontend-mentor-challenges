@@ -12,6 +12,7 @@
     "@commitlint/cli": "^16.2.1",
     "@lucasbernardolira/custom-commitlint-config": "^0.0.2",
     "husky": "^7.0.4",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9"
   }
 }
