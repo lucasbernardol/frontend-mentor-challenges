@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./public/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
 
+    <link rel="icon" type="image/png" href="./public/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,44 +22,31 @@
     <link rel="stylesheet" type="text/css" href="./styles/css/bundle.css" />
 
     <title>Frontend Mentor | FAQ Accordion Card - José Lucas</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="application_wrapper">
       <main class="main_container">
         <section class="faq_component">
-          <div class="faq_component_left">
-            <div class="banner_wrapper">
+          <div class="faq_component_illustrations">
+            <div class="illustration_container">
               <div class="banner">
                 <img
-                  class=""
                   src="./public/images/illustration-woman-online-desktop.svg"
-                  alt=""
                 />
               </div>
 
               <img
-                class="cube_image_float"
+                class="box"
                 src="./public/images/illustration-box-desktop.svg"
-                alt=""
               />
             </div>
           </div>
 
-          <div class="faq_component_right">
+          <div class="faq_component_questions">
             <h2 class="faq_title">faq</h2>
 
             <div class="faq_questions">
-              <details class="faq_question" open="true">
+              <details class="faq_question">
                 <summary class="question_summary">
                   <span class="question_text">
                     How many team members can I invite?
@@ -73,7 +62,7 @@
                 </div>
               </details>
 
-              <details class="faq_question">
+              <details class="faq_question" open="true">
                 <summary class="question_summary">
                   <span class="question_text">
                     What is the maximum file upload size?
@@ -157,12 +146,19 @@
           </div>
         </section>
 
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        <section class="created_by">
+          <span> Challenge by</span>
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor.
+          </a>
+          <span>Coded by</span>
+          <a
+            target="_blank"
+            title="Redirect: Github profile - new tab"
+            href="https://github.com/lucasbernardol/"
+            >José Lucas B Lira.
+          </a>
+        </section>
       </main>
     </div>
   </body>
