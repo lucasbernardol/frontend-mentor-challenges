@@ -15,16 +15,12 @@
   --background-image-desktop: url('../../public/images/bg-pattern-desktop.svg');
 
   font-size: 62.5%; /** 10px */
-}
 
-@media (max-width: 980px) {
-  :root {
+  @media (max-width: 980px) {
     font-size: 60%;
   }
-}
 
-@media (max-width: 900px) {
-  :root {
+  @media (max-width: 900px) {
     font-size: 58%;
   }
 }

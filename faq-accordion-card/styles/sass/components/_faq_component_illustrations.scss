@@ -1,0 +1,39 @@
+.faq_component_illustrations {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  .illustration_container {
+    position: absolute;
+
+    .banner {
+      width: 40rem;
+      height: 40rem;
+
+      position: relative;
+
+      background: var(--background-image-desktop) no-repeat;
+      background-size: 90% 100%;
+
+      overflow: hidden;
+    }
+
+    img.box {
+      position: absolute;
+      top: -10%;
+      left: 0;
+
+      width: 20rem;
+      height: 20rem;
+
+      transform: translateX(-50%) translateY(50%);
+      z-index: 999;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

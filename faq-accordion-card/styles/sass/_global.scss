@@ -1,4 +1,4 @@
-@import './colors';
+@import './variables';
 
 * {
   margin: 0;
@@ -39,4 +39,14 @@ body {
 i.expand_more,
 i.expand_less {
   color: var(--color-soft-red);
+}
+
+.created_by {
+  margin: 2rem;
+
+  color: var(--color-white);
+
+  a {
+    color: var(--color-very-dark-blue);
+  }
 }
