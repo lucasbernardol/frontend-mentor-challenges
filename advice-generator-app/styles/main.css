@@ -1,0 +1,140 @@
+.application_wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main_container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 1.5rem;
+}
+
+.advice {
+  position: relative;
+  text-align: center;
+
+  width: min(100%, 620px);
+  padding: 5rem 4rem 6rem;
+
+  background-color: var(--color-dark-grayish-blue);
+  border-radius: 2rem;
+
+  transition: all 0.5s;
+  animation: advice_init_frame 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.advice__idenfier {
+  width: 100%;
+
+  color: var(--color-neon-green);
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: underline;
+}
+
+.advice__idenfier span {
+  color: inherit;
+  font-size: 1.6rem;
+
+  text-transform: uppercase;
+}
+
+.advice__idenfier .advice__id {
+  margin-left: 1rem;
+
+  color: inherit;
+  font-style: oblique;
+}
+
+.advice__idenfier span,
+.advice__idenfier .advice__id {
+  letter-spacing: 0.5rem;
+}
+
+.advice__text {
+  position: relative;
+
+  font-size: 3rem;
+  font-weight: 800;
+
+  color: var(--color-light-cyan);
+  line-height: 1.2;
+
+  margin: 3.5rem 0;
+  transition: all 0.5s;
+}
+
+.advice__text.text_animated {
+  animation: text_animated_frame 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.advice__divider {
+  width: 100%;
+
+  padding: 1rem;
+  margin: 1rem 0;
+
+  background: var(--advice-background-image-desktop) no-repeat;
+  background-size: 100% 100%;
+}
+
+.advice__button {
+  font-size: 0;
+
+  padding: 1.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-neon-green);
+  border-radius: 50%;
+
+  transition: all 0.6s;
+
+  animation: button_load_frame 0.6s;
+  animation-delay: 0.6s;
+}
+
+.advice__button:disabled {
+  opacity: 0.1;
+}
+
+.advice__button:disabled:hover {
+  box-shadow: none;
+  opacity: 0.1;
+}
+
+.advice__button:hover {
+  opacity: 0.9;
+
+  box-shadow: 10px 10px 16px -8px var(--color-neon-green),
+    -10px 10px 16px -8px var(--color-neon-green),
+    10px -10px 16px -8px var(--color-neon-green),
+    -10px -10px 16px -8px var(--color-neon-green);
+}
+
+.advice__button.floating {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%) translateY(50%);
+}
+
+.challenge_by {
+  display: none;
+}

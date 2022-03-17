@@ -1,0 +1,53 @@
+:root {
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+
+  --advice-background-image-desktop: url('../public/images/pattern-divider-desktop.svg');
+  --advice-background-image-mobile: url('../public/images/pattern-divider-mobile.svg');
+
+  /**
+   * 1.6rem => 16px || 1.6 * 10 = 16 
+  */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+mark {
+  background-color: transparent;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.quote::before {
+  content: '"';
+}
+
+.quote::after {
+  content: '"';
+}

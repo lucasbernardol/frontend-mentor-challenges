@@ -4,20 +4,59 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Advice generator app - José Lucas" />
-    <link rel="shortcut icon" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="shortcut icon" sizes="32x32" href="public/images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/responsove-global.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/animations-main.css" />
+    <link rel="stylesheet" href="./styles/responsive-main.css" />
+
+    <script defer src="./scripts/advice.js"></script>
 
     <title>Frontend Mentor | Advice generator app - José Lucas</title>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <div class="application_wrapper">
+      <main class="main_container">
+        <section class="advice">
+          <h3 class="advice__idenfier">
+            <span>advice</span>
+            <mark class="advice__id" data-id="advice-id">#50</mark>
+          </h3>
 
-    "<!-- Advice text goes here -->"
+          <p class="advice__text quote" data-id="advice-text">
+            Walking is a perfectly valid solution to traffic congestion
+            problems.
+          </p>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <div class="advice__divider"></div>
+
+          <button
+            title="Change advice"
+            type="button"
+            class="advice__button floating"
+            data-id="shuffle-button"
+          >
+            <img src="./public/images/icon-dice.svg" alt="Advice button icon" />
+          </button>
+        </section>
+
+        <div class="challenge_by">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </main>
     </div>
   </body>
 </html>

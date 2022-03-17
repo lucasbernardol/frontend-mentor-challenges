@@ -1,0 +1,13 @@
+@media (max-width: 480px) {
+  .advice {
+    padding: 4rem 1.5rem;
+  }
+
+  .advice__text {
+    font-size: 2.5rem;
+  }
+
+  .advice__divider {
+    background-image: var(--advice-background-image-mobile);
+  }
+}
