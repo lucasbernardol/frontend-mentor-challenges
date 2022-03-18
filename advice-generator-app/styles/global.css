@@ -6,6 +6,8 @@
   --color-dark-grayish-blue: hsl(217, 19%, 24%);
   --color-dark-blue: hsl(218, 23%, 16%);
 
+  --selection-color: rgba(119, 247, 183, 0.2);
+
   --advice-background-image-desktop: url('../public/images/pattern-divider-desktop.svg');
   --advice-background-image-mobile: url('../public/images/pattern-divider-mobile.svg');
 
@@ -15,13 +17,19 @@
   font-size: 62.5%;
 }
 
+*::selection {
+  background-color: var(--selection-color);
+}
+
 * {
   margin: 0;
   padding: 0;
 
   box-sizing: border-box;
+
   font-family: 'Manrope', sans-serif;
   font-size: 1.6rem;
+  font-weight: 800;
 
   border: none;
 }
@@ -47,9 +55,14 @@ img {
 }
 
 .quote::before {
-  content: '"';
+  content: '“';
 }
 
 .quote::after {
-  content: '"';
+  content: '”';
+}
+
+.challenge_by span,
+.challenge_by a {
+  font-weight: 400;
 }
