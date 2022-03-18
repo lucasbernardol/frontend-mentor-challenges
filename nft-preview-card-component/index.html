@@ -3,20 +3,113 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" href="./public/images/favicon.png" />
+    <meta
+      name="description"
+      content="Frontend Mentor | NFT preview card component - José Lucas"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <title>Frontend Mentor | NFT preview card component- José Lucas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/responsive-global.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/responsive-main.css" />
+
+    <title>Frontend Mentor | NFT preview card component - José Lucas</title>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+    <div class="application_wrapper">
+      <main class="main_container">
+        <section class="ntf_card">
+          <header class="nft__header">
+            <img
+              src="./public/images/image-equilibrium.jpg"
+              alt="Equilibrium nft illustration"
+            />
+            <div class="nft__overlay" aria-label="overlay">
+              <img
+                src="./public/images/icon-view.svg"
+                alt="View nft"
+                class="nft__view_icon"
+              />
+            </div>
+          </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <section class="nft__content">
+            <div class="nft__details">
+              <h2 class="nft__title">
+                <a href="#" title="Equilibrium #3429">Equilibrium #3429</a>
+              </h2>
+
+              <p class="nft__text">
+                Our Equilibrium collection promotes balance and calm.
+              </p>
+
+              <div class="nft__publication">
+                <strong>
+                  <img
+                    src="./public/images/icon-ethereum.svg"
+                    alt="Ethereum icon"
+                    class="ethereum_icon"
+                  />
+
+                  0.041 ETH
+                </strong>
+
+                <span>
+                  <img
+                    src="./public/images/icon-clock.svg"
+                    alt="Clock icon"
+                    class="clock_icon"
+                  />
+
+                  3 days left
+                </span>
+              </div>
+            </div>
+
+            <div class="nft__creator">
+              <img
+                class="nft__avatar"
+                src="./public/images/image-avatar.png"
+                alt="Jules Wyvern avatar"
+                title="Creation of Jules Wyvern"
+              />
+
+              <p class="nft__create_info">
+                <span class="creation__text">Creation of</span>
+                <a class="nft__creator_link" href="#">Jules Wyvern</a>
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <div class="challenge_coded_by">
+          <span> Challenge by</span>
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            title="Frontend Mentor"
+            target="_blank"
+          >
+            Frontend Mentor.
+          </a>
+          <span>Coded by</span>
+          <a
+            target="_blank"
+            href="https://github.com/lucasbernardol"
+            title="Redirect: Github profile - new tab"
+          >
+            José Lucas B. Lira.
+          </a>
+        </div>
+      </main>
     </div>
   </body>
 </html>

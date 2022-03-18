@@ -1,0 +1,68 @@
+:root {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-cyan-overlay: rgba(0, 255, 247, 0.6);
+
+  --color-very-dark-blue-body: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-custom-shadow: rgba(0, 0, 0, 0.5);
+  --color-all-selection: rgba(139, 172, 218, 0.4);
+
+  font-size: 62.5%; /** 62.5% */
+}
+
+*::-moz-selection {
+  background-color: var(--color-all-selection); /** test */
+}
+
+*::selection {
+  background-color: var(--color-all-selection);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--color-very-dark-blue-body);
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+
+  pointer-events: none;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+
+  display: block;
+}
+
+.creation__text {
+  color: var(--color-soft-blue);
+}
