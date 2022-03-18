@@ -29,7 +29,7 @@
   border-radius: 2rem;
 
   transition: all 0.5s;
-  animation: advice_init_frame 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: advice_init_frame 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .advice__idenfier {
@@ -104,9 +104,6 @@
   border-radius: 50%;
 
   transition: all 0.6s;
-
-  animation: button_load_frame 0.6s;
-  animation-delay: 0.6s;
 }
 
 .advice__button:disabled {
@@ -136,5 +133,25 @@
 }
 
 .challenge_by {
-  display: none;
+  width: auto;
+  margin: 8rem 0 2rem;
+  padding: 0.5rem;
+
+  font-size: 1.4rem;
+  color: var(--color-light-cyan);
+
+  animation: challenge_links_frame 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.challenge_by a,
+.challenge_by span {
+  opacity: 0.5;
+}
+
+.challenge_by a {
+  color: var(--color-neon-green);
+}
+
+.challenge_by a:hover {
+  text-decoration: none;
 }
