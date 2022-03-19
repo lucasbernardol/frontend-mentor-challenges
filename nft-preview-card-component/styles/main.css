@@ -114,9 +114,9 @@
   font-weight: 300;
 
   color: var(--color-soft-blue);
-  line-height: 1.2;
+  line-height: 1.5;
 
-  margin: 2rem 0;
+  margin: 1.8rem 0;
 }
 
 .nft__publication {
@@ -183,9 +183,8 @@
 }
 
 .challenge_coded_by {
-  margin: 2rem;
+  margin: 2rem 0;
 
-  font-size: 1.2rem;
   color: var(--color-white);
 
   opacity: 0.5;
@@ -195,6 +194,7 @@
 .challenge_coded_by span,
 .challenge_coded_by a {
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .challenge_coded_by a {

@@ -2,4 +2,8 @@
   .main_container {
     justify-content: flex-start;
   }
+
+  .challenge_coded_by {
+    max-width: 75%;
+  }
 }
