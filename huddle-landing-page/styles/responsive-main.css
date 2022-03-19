@@ -1,0 +1,74 @@
+@media (min-width: 1400px) {
+  .introduction__content {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .banner__fixed {
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .introduction__content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .introduction__banner {
+    max-height: 50rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .huddle_logo {
+    width: 20rem;
+  }
+
+  .main__container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .banner__fixed {
+    height: 45rem;
+  }
+
+  .introduction__content {
+    width: 90%;
+
+    padding: 0;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .introduction__banner {
+    width: 80%;
+  }
+
+  .banner__fixed {
+    height: 30rem;
+    padding: 0;
+  }
+
+  .introduction__content {
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__social_list {
+    margin: 2rem 0;
+
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduction__banner {
+    width: 100%;
+  }
+}

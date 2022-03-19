@@ -1,0 +1,62 @@
+:root {
+  --color-violet: #674baf;
+  --color-soft-magenta: hsl(300, 69%, 71%);
+
+  --color-selection: rgba(141, 97, 253, 0.8);
+  --color-white: #fff;
+
+  --illustration-background-desktop: url('../public/images/bg-desktop.svg');
+  --illustration-background-mobile: url('../public/images/bg-mobile.svg');
+
+  font-size: 62.5%; /** 10px */
+}
+
+*::selection {
+  background-color: var(--color-selection);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: url('../public/images/bg-desktop.svg') no-repeat;
+
+  background-size: cover;
+  background-color: var(--color-violet);
+}
+
+i {
+  font-size: 2rem;
+}

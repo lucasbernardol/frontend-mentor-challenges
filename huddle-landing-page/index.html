@@ -3,34 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#674baf" />
+    <meta name="msapplication-navbutton-color" content="#674baf" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#674baf" />
 
     <link rel="icon" type="image/png" href="./public/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/responsive-global.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/responsive-main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a48a0061c2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Frontend Mentor | Huddle landing page - José Lucas</title>
   </head>
   <body>
-    <span>Build The Community Your Fans Will Love</span>
+    <div class="application_wrapper">
+      <div class="layout_wrapper">
+        <header class="header__container">
+          <img
+            src="./public/images/logo.svg"
+            class="huddle_logo"
+            alt="Huddle logo"
+          />
+        </header>
 
-    <span
-      >Huddle re-imagines the way we build communities. You have a voice, but so
-      does your audience. Create connections with your users as you engage in
-      genuine discussion.
-    </span>
+        <main class="main__container">
+          <div class="introduction__banner">
+            <div class="banner__fixed"></div>
+          </div>
+          <div class="introduction__content">
+            <h1 class="introduction__title">
+              Build The Community Your Fans Will Love
+            </h1>
 
-    <span
-      >Huddle re-imagines the way we build communities. You have a voice, but so
-      does your audience. Create connections with your users as you engage in
-      genuine discussion.
-    </span>
+            <p class="introduction__text">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
 
-    <footer>
-      <p class="attribution">
-        <span>Challenge by</span>
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor.
-        </a>
-        <span> Coded by</span>
-        <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+            <a class="introduction__anchor_register" href="#">Register</a>
+          </div>
+        </main>
+
+        <footer class="footer__container">
+          <ul class="footer__social_list">
+            <li class="social__list_item">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="social__list_item">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social__list_item">
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div class="challenge_coded_by">
+            <p class="attribution">
+              <span>Challenge by</span>
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+              >
+                Frontend Mentor.
+              </a>
+              <span> Coded by</span>
+              <a href="#">Your Name Here</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

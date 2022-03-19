@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+  :root {
+    /** 9.6px */
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    /** 9,28px */
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 55%;
+  }
+
+  body {
+    background-image: var(--illustration-background-mobile);
+    background-position: top;
+  }
+}
