@@ -1,0 +1,74 @@
+:root {
+  --color-light-red-work: hsl(15, 100%, 70%);
+  --color-soft-blue-play: hsl(195, 74%, 62%);
+  --color-light-red-study: hsl(348, 100%, 68%);
+  --color-lime-green-exercise: hsl(145, 58%, 55%);
+  --color-violet-social: hsl(264, 64%, 52%);
+  --color-soft-orange-self-care: hsl(43, 84%, 65%);
+
+  --color-very-dark-blue: #0f1424;
+  --color-dark-blue: hsl(235, 46%, 20%);
+  --color-desaturated-blue: hsl(235, 45%, 61%);
+  --color-pale-blue: hsl(236, 100%, 87%);
+
+  --color-dark-blue-card: hsl(240, 52%, 55%);
+  --color-background-selection: rgba(111, 118, 200, 0.8);
+  --color-text-white: #ffffff;
+
+  font-size: 62.5%;
+}
+
+*::-moz-selection {
+  background-color: var(--color-background-selection);
+}
+
+*::selection {
+  background-color: var(--color-background-selection);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  border: none;
+
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+
+  display: block;
+}
+
+body {
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-pale-blue);
+}
+
+ul {
+  list-style: none;
+}

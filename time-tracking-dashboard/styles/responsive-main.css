@@ -1,0 +1,92 @@
+@media (max-width: 1024px) {
+  .dashboard__activities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .dashboard__activities {
+    grid-template-columns: 1fr;
+  }
+
+  .activity__card {
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 620px) {
+  .dashboard {
+    flex-direction: column;
+
+    padding: 0 2rem;
+  }
+
+  .dashboard__profile {
+    width: 100%;
+
+    margin: 0; /** All margins **/
+
+    margin-bottom: 4rem;
+  }
+
+  .dashboard__profile_info {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 2rem;
+  }
+
+  .dashboard__profile_info img {
+    margin: 0;
+  }
+
+  .dashboard__profile_creator {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .dashboard__author_name {
+    max-width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .dashboard__navigation {
+    padding: 1.5rem 2rem;
+  }
+
+  .navigation__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation__option {
+    padding: 1rem;
+  }
+
+  .activity__current {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .dashboard {
+    padding: 0;
+  }
+
+  .dashboard__text_reported {
+    font-size: 1.4rem;
+  }
+
+  .dashboard__author_name {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .activity__card:hover {
+    transform: none;
+  }
+
+  .challenge_coded_by {
+    max-width: 80%;
+  }
+}
