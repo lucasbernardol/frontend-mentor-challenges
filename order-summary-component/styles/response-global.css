@@ -1,0 +1,15 @@
+@media (max-width: 980px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 58%;
+  }
+
+  body {
+    background-image: url('../public/images/pattern-background-mobile.svg');
+  }
+}

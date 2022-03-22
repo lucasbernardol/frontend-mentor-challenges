@@ -1,0 +1,55 @@
+:root {
+  --color-pale-blue: #e0e8ff;
+  --color-bright-blue: hsl(245, 75%, 52%);
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+  --color-white: #ffffff;
+
+  font-size: 62.5%; /** 16px **/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url('../public/images/pattern-background-desktop.svg') no-repeat;
+
+  background-color: var(--color-pale-blue);
+  background-attachment: fixed;
+
+  background-size: 100% 50%;
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+
+  display: block;
+}

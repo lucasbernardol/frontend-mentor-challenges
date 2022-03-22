@@ -1,0 +1,14 @@
+@media (max-width: 720px) {
+  .order_summary__content {
+    padding: 2rem 3rem;
+  }
+
+  .order_summary__icon_music {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .challenge_coded_by {
+    max-width: 70%;
+  }
+}

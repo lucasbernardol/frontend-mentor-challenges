@@ -3,20 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e0e8ff" />
+    <meta name="msapplication-navbutton-color" content="#e0e8ff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e0e8ff" />
+    <meta
+      name="description"
+      content="José Lucas | Frontend Mentor - Order summary card"
+    />
+
     <link rel="shortcut icon" href="./public/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/wrappers.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <link rel="stylesheet" href="./styles/response-global.css" />
+    <link rel="stylesheet" href="./styles/responsive-wrapper.css" />
+    <link rel="stylesheet" href="./styles/responsive-main.css" />
 
     <title>José Lucas | Frontend Mentor - Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <div class="application_wrapper">
+      <div class="wrapper">
+        <main class="order_summary">
+          <header class="order_summary__header">
+            <img
+              src="./public/images/illustration-hero.svg"
+              alt="Illustration Hero"
+            />
+          </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <div class="order_summary__content">
+            <h2 class="order_summary__title">Order Summary</h2>
+
+            <p class="order_summary__text">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+
+            <div class="order_summary__plan">
+              <div class="plan__details">
+                <img
+                  src="./public/images/icon-music.svg"
+                  class="order_summary__icon_music"
+                  alt="Music icon"
+                />
+                <div class="plan__information">
+                  <h3 class="plan__title">Annual Plan</h3>
+                  <span class="plan__value">$59.99/year</span>
+                </div>
+              </div>
+
+              <a href="#" class="plan__anchor_change">Change</a>
+            </div>
+
+            <div class="order_summary__buttons">
+              <button type="button" class="preceed__buton">
+                Proceed to Payment
+              </button>
+
+              <button type="button" class="cancel__button">Cancel Order</button>
+            </div>
+          </div>
+        </main>
+
+        <div class="challenge_coded_by">
+          <span>Challenge by</span>
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor.
+          </a>
+          <span>Coded by</span>
+
+          <a
+            target="_blank"
+            href="https://github.com/lucasbernardol"
+            title="Redirect: Github profile - open new tap"
+          >
+            José Lucas B. Lira.
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
