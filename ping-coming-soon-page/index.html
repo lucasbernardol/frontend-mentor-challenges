@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html translate="yes" lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="public/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/wrapper.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <link rel="stylesheet" href="./styles/responsive-global.css" />
+    <link rel="stylesheet" href="./styles/responsive-main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a48a0061c2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./scripts/ping-page.js"></script>
 
     <title>José Lucas | Frontend Mentor - Ping coming soon page</title>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <div class="application_wrapper">
+      <main class="launching_page">
+        <header class="launching__header">
+          <div class="launching__header_top">
+            <img src="./public/images/logo.svg" alt="Ping launching logo" />
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+            <h2 class="launching__header_title">
+              We are launching
+              <span class="launching__header_title_inline">soon!</span>
+            </h2>
+
+            <span class="launching__header_text">
+              Subscribe and get notified
+            </span>
+          </div>
+
+          <form class="launching__header_form" method="post">
+            <div class="input__wrapper">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address..."
+                autocomplete="off"
+                required
+              />
+
+              <span class="input__error_text">error</span>
+            </div>
+            <button type="submit">Notify Me</button>
+          </form>
+        </header>
+
+        <div class="launching__banner">
+          <img src="./public/images/illustration-dashboard.png" alt="" />
+        </div>
+
+        <footer class="launching__footer">
+          <ul class="launching__footer_list">
+            <li class="launching__footer_item">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="launching__footer_item">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="launching__footer_item">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+
+          <small class="copyright__text">
+            &copy; Copyright Ping. All rights reserved.
+          </small>
+
+          <p class="copyright__coded_by">
+            <span>Challenge by</span>
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+            >
+              Frontend Mentor.
+            </a>
+            <span>Challenge by</span>
+            <a href="#">José Lucas B. Lira</a>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

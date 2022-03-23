@@ -1,0 +1,35 @@
+@media (max-width: 620px) {
+  .launching__header_title {
+    font-size: 3.2rem;
+  }
+
+  .launching__header_form {
+    flex-direction: column;
+  }
+
+  .input__wrapper {
+    margin: 0;
+    width: 80%;
+  }
+
+  .launching__header_form button {
+    width: 80%;
+
+    margin-top: 3rem;
+  }
+
+  .launching__banner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .launching__header_title {
+    font-size: 2.8rem;
+  }
+
+  .input__wrapper,
+  .launching__header_form button {
+    width: 100%;
+  }
+}

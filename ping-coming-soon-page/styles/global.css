@@ -1,0 +1,65 @@
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-light-red: hsl(354, 100%, 66%);
+
+  --color-gray: hsl(0, 0%, 59%);
+  --color-very-dark-blue: hsl(209, 33%, 12%);
+  --color-white: #ffffff;
+
+  --color-background-selection: rgba(82, 131, 255, 0.3);
+
+  font-size: 62.5%;
+}
+
+*::-moz-selection {
+  background-color: var(--color-background-selection);
+}
+
+*::selection {
+  background-color: var(--color-background-selection);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+
+  display: block;
+}
+
+body {
+  background-color: var(--color-white);
+  scroll-behavior: smooth;
+}
